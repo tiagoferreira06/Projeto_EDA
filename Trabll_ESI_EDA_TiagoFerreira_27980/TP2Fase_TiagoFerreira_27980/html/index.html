@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabalho Pratico Fase 2: Trabalho de Estrutura de Dados - Grafos</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Trabalho Pratico Fase 2<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Trabalho de Estrutura de Dados - Grafos </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
+Introducao</h1>
+<p>Este trabalho consiste na implementacao de operacoes basicas em grafos utilizando a linguagem de programacao C. Inclui a criacao de um grafo, insercao e remocao de vertices e arestas, busca de caminho com soma maxima e exibicao do grafo.</p>
+<h1><a class="anchor" id="func_sec"></a>
+Alguma das Funcionalidades Implementadas</h1>
+<ul>
+<li>Criacao de um grafo vazio</li>
+<li>Insercao e remocao de vertices e arestas</li>
+<li>Busca de caminho com a maior soma</li>
+<li>Exibicao do grafo</li>
+</ul>
+<h1><a class="anchor" id="example_sec"></a>
+Exemplo</h1>
+<p>Aqui esta um exemplo simples de como criar um grafo, adicionar alguns vertices e arestas, e buscar o caminho com a maior soma:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="_header_8h.html">Header.h</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line">    <span class="comment">// Criar um grafo</span></div>
+<div class="line">    <a class="code hl_struct" href="struct_grafo.html">Grafo</a>* grafo = <a class="code hl_function" href="_functions_8c.html#a315b1eeedcdd58cfa636e61fb5018084">CriaGrafo</a>(10);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Adicionar alguns vertices e arestas</span></div>
+<div class="line">    <a class="code hl_function" href="_functions_8c.html#ab33055790d3d1f6f66da57631e7f3011">InserirVerticeGrafo</a>(grafo, <a class="code hl_function" href="_header_8h.html#a298df0cfda044087fde59fbe25cd431e">CriaVertice</a>(1,563));</div>
+<div class="line">    <a class="code hl_function" href="_functions_8c.html#ab33055790d3d1f6f66da57631e7f3011">InserirVerticeGrafo</a>(grafo, <a class="code hl_function" href="_header_8h.html#a298df0cfda044087fde59fbe25cd431e">CriaVertice</a>(2,100));</div>
+<div class="line">    <a class="code hl_function" href="_functions_8c.html#a41e5738d291b7f2309dfa989e1f53670">InserirAdjacenciaGrafo</a>(grafo, 1, 2);</div>
+<div class="line">     </div>
+<div class="line">    <a class="code hl_function" href="_functions_8c.html#ad993f4432cd0e40ae891e1fb36773837">MostrarGrafo</a>(grafo-&gt;<a class="code hl_variable" href="struct_grafo.html#a59b70070c78a3433ac8373d0467441da">inicioGrafo</a>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Buscar o caminho com a maior soma</span></div>
+<div class="line">    <a class="code hl_struct" href="struct_resultado.html">Resultado</a>* resultado = <a class="code hl_function" href="_functions_8c.html#a0774a3379ae91f690b9fc501f31e8e85">CaminhoSomaMaxima</a>(grafo);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="a_functions_8c_html_a0774a3379ae91f690b9fc501f31e8e85"><div class="ttname"><a href="_functions_8c.html#a0774a3379ae91f690b9fc501f31e8e85">CaminhoSomaMaxima</a></div><div class="ttdeci">Resultado * CaminhoSomaMaxima(Grafo *grafo)</div><div class="ttdoc">Encontra o caminho com a soma m�xima em um grafo.</div><div class="ttdef"><b>Definição</b> Functions.c:285</div></div>
+<div class="ttc" id="a_functions_8c_html_a315b1eeedcdd58cfa636e61fb5018084"><div class="ttname"><a href="_functions_8c.html#a315b1eeedcdd58cfa636e61fb5018084">CriaGrafo</a></div><div class="ttdeci">Grafo * CriaGrafo(int total)</div><div class="ttdoc">Cria um novo grafo.</div><div class="ttdef"><b>Definição</b> Functions.c:24</div></div>
+<div class="ttc" id="a_functions_8c_html_a41e5738d291b7f2309dfa989e1f53670"><div class="ttname"><a href="_functions_8c.html#a41e5738d291b7f2309dfa989e1f53670">InserirAdjacenciaGrafo</a></div><div class="ttdeci">Grafo * InserirAdjacenciaGrafo(Grafo *grafo, int idOrigem, int idDestino, bool *res)</div><div class="ttdoc">Insere uma nova adjacencia no grafo.</div><div class="ttdef"><b>Definição</b> Functions.c:169</div></div>
+<div class="ttc" id="a_functions_8c_html_ab33055790d3d1f6f66da57631e7f3011"><div class="ttname"><a href="_functions_8c.html#ab33055790d3d1f6f66da57631e7f3011">InserirVerticeGrafo</a></div><div class="ttdeci">Grafo * InserirVerticeGrafo(Grafo *grafo, Vertice *novo, int *res)</div><div class="ttdoc">Insere um novo vertice no grafo.</div><div class="ttdef"><b>Definição</b> Functions.c:79</div></div>
+<div class="ttc" id="a_functions_8c_html_ad993f4432cd0e40ae891e1fb36773837"><div class="ttname"><a href="_functions_8c.html#ad993f4432cd0e40ae891e1fb36773837">MostrarGrafo</a></div><div class="ttdeci">void MostrarGrafo(Vertice *grafo)</div><div class="ttdoc">Mostra o conteudo do grafo.</div><div class="ttdef"><b>Definição</b> Functions.c:44</div></div>
+<div class="ttc" id="a_header_8h_html"><div class="ttname"><a href="_header_8h.html">Header.h</a></div><div class="ttdoc">Declaracao de estruturas e funcoes auxiliares para o trabalho de Grafos.</div></div>
+<div class="ttc" id="a_header_8h_html_a298df0cfda044087fde59fbe25cd431e"><div class="ttname"><a href="_header_8h.html#a298df0cfda044087fde59fbe25cd431e">CriaVertice</a></div><div class="ttdeci">Vertice * CriaVertice(int id, int valor)</div><div class="ttdoc">Cria um novo vertice.</div><div class="ttdef"><b>Definição</b> Vertices.c:27</div></div>
+<div class="ttc" id="amain_8c_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definição</b> main.c:56</div></div>
+<div class="ttc" id="astruct_grafo_html"><div class="ttname"><a href="struct_grafo.html">Grafo</a></div><div class="ttdoc">Estrutura para representar um grafo.</div><div class="ttdef"><b>Definição</b> Header.h:45</div></div>
+<div class="ttc" id="astruct_grafo_html_a59b70070c78a3433ac8373d0467441da"><div class="ttname"><a href="struct_grafo.html#a59b70070c78a3433ac8373d0467441da">Grafo::inicioGrafo</a></div><div class="ttdeci">Vertice * inicioGrafo</div><div class="ttdef"><b>Definição</b> Header.h:46</div></div>
+<div class="ttc" id="astruct_resultado_html"><div class="ttname"><a href="struct_resultado.html">Resultado</a></div><div class="ttdoc">Estrutura para o calculo da soma maxima.</div><div class="ttdef"><b>Definição</b> Header.h:54</div></div>
+</div><!-- fragment --><h1><a class="anchor" id="notes_sec"></a>
+Notas</h1>
+<ul>
+<li>Todas as funcionalidades foram implementadas conforme especificado no enunciado da disciplina.</li>
+<li>O codigo fonte esta organizado em seis arquivos: <a class="el" href="main_8c.html">main.c</a>, <a class="el" href="_functions_8c.html" title="Implementacoes das funcoes para manipulacao de grafos.">functions.c</a>, <a class="el" href="_vertices_8c.html" title="Implementacao das funcoes de manipulacao de vertices para o trabalho de Grafos.">Vertices.c</a>, <a class="el" href="_adjacencias_8c.html" title="Implementacao das funcoes de manipulacao de adjacencias para o trabalho de Grafos.">Adjacencias.c</a>, <a class="el" href="_gere_ficheiro_8c.html">GereFicheiro.c</a> e <a class="el" href="_header_8h.html" title="Declaracao de estruturas e funcoes auxiliares para o trabalho de Grafos.">Header.h</a>.</li>
+<li>Cada arquivo contem um conjunto de funcionalidades relacionadas.</li>
+</ul>
+<h1><a class="anchor" id="author_sec"></a>
+Autor</h1>
+<p>Este trabalho foi desenvolvido por Tiago Ferreira. </p>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"/>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

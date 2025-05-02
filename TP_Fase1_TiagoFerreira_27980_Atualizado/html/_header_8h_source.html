@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Código-Fonte de Header.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Header.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_header_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="_header_8h.html#af08ec37a8c99d747fb60fa15bc28678b">   15</a></span><span class="preprocessor">#define _CRT_SECURE_NO_WARNINGS</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#pragma region EstruturaParaMatriz</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="_header_8h.html#a4b43d871b3b95d055eb797c21c0f1a86">   21</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_no.html">No</a> <a class="code hl_struct" href="struct_no.html">No</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="_header_8h.html#a511b8f0ddc1f582f002028ce9dd11f5e">   22</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_matriz.html">Matriz</a> <a class="code hl_struct" href="struct_matriz.html">Matriz</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">  * @brief Estrutura para representar os elementos individuais da matriz.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">  */</span></div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_no.html">   27</a></span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_no.html">No</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_no.html#a76f11d9a0a47b94f72c2d0e77fb32240">   28</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_no.html#a76f11d9a0a47b94f72c2d0e77fb32240">n</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_no.html#ae2403d56aa9e8b9de4c005ab682326e7">   29</a></span>    <a class="code hl_struct" href="struct_no.html">No</a>* <a class="code hl_variable" href="struct_no.html#ae2403d56aa9e8b9de4c005ab682326e7">pbaixo</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_no.html#a8296fb931678979bce9bed213f6b8749">   30</a></span>    <a class="code hl_struct" href="struct_no.html">No</a>* <a class="code hl_variable" href="struct_no.html#a8296fb931678979bce9bed213f6b8749">pdireita</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
+</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_matriz.html">   36</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_matriz.html">Matriz</a> {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_matriz.html#a4a2f44649af1dfbf8d13141d5a336455">   37</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_matriz.html#a4a2f44649af1dfbf8d13141d5a336455">coluna</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="struct_matriz.html#af20d02e678ba0aeaf8727d747151baf0">   38</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_matriz.html#af20d02e678ba0aeaf8727d747151baf0">linha</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="struct_matriz.html#aff08063ecf969a4a9168eb29d2a805df">   39</a></span>    <a class="code hl_struct" href="struct_no.html">No</a>* <a class="code hl_variable" href="struct_matriz.html#aff08063ecf969a4a9168eb29d2a805df">ini</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#pragma region imprimirLista</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keywordtype">void</span> <a class="code hl_function" href="_header_8h.html#a23464eb0114f6a40c93ce062fa268e1d">imprimirLista</a>(<a class="code hl_struct" href="struct_matriz.html">Matriz</a>* matriz);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#pragma region CriaListaMatriz</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><a class="code hl_struct" href="struct_matriz.html">Matriz</a>* <a class="code hl_function" href="_header_8h.html#a557683bf43cab45c2cb1689e8424dc6f">CriaLista</a>(<span class="keywordtype">int</span> linhas, <span class="keywordtype">int</span> colunas);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#pragma region ProcurarNumeroMatriz</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><a class="code hl_struct" href="struct_no.html">No</a>* <a class="code hl_function" href="_header_8h.html#a8bd23d9230114dcc342d88083bc126bb">ProcurarNumeroMatriz</a>(<a class="code hl_struct" href="struct_matriz.html">Matriz</a>* matriz, <span class="keywordtype">int</span> linha, <span class="keywordtype">int</span> coluna);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#pragma region FicheiroParaListaMatriz</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keywordtype">int</span> <a class="code hl_function" href="_header_8h.html#affaa9f23a0d5e8839b001e78e56d673b">FicheiroParaLista</a>(<a class="code hl_struct" href="struct_matriz.html">Matriz</a>* matriz, <span class="keyword">const</span> <span class="keywordtype">char</span>* fileName);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#pragma region AdicionarLinha</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keywordtype">int</span> <a class="code hl_function" href="_header_8h.html#aaf0b6fef4f6a8fe9a64d33e40309f7d4">AdicionarLinha</a>(<a class="code hl_struct" href="struct_matriz.html">Matriz</a>* matriz, <span class="keywordtype">int</span> posicao, <span class="keywordtype">int</span> num[]);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#pragma region AdicionarColuna</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keywordtype">int</span> <a class="code hl_function" href="_header_8h.html#a8fbe3be11775eb8a03a8e224927c9d1b">AdicionarColuna</a>(<a class="code hl_struct" href="struct_matriz.html">Matriz</a>* matriz, <span class="keywordtype">int</span> posicao, <span class="keywordtype">int</span> num[]);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#pragma region eliminarLinha</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keywordtype">int</span> <a class="code hl_function" href="_header_8h.html#a1ca9b723537474380b06d3b51d2767bb">eliminarLinha</a>(<a class="code hl_struct" href="struct_matriz.html">Matriz</a>* matriz, <span class="keywordtype">int</span> pos);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#pragma region eliminarColuna</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keywordtype">int</span> <a class="code hl_function" href="_header_8h.html#a6ebfe00bc26cdc193ee5ff4db1f62b37">eliminarColuna</a>(<a class="code hl_struct" href="struct_matriz.html">Matriz</a>* matriz, <span class="keywordtype">int</span> pos);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#pragma region SomaMaxima</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keywordtype">int</span> <a class="code hl_function" href="_header_8h.html#a07705628515f25c30f7f4565ed66eb22">SomaMaximaAux</a>(<a class="code hl_struct" href="struct_matriz.html">Matriz</a>* matriz, <span class="keywordtype">int</span> linha, <span class="keywordtype">int</span>* colunasUsadas);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keywordtype">int</span> <a class="code hl_function" href="_header_8h.html#a401e502fc09ad80bafd4369db3a5a2f6">SomaMaxima</a>(<a class="code hl_struct" href="struct_matriz.html">Matriz</a>* matriz);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#pragma endregion</span></div>
+<div class="ttc" id="a_header_8h_html_a07705628515f25c30f7f4565ed66eb22"><div class="ttname"><a href="_header_8h.html#a07705628515f25c30f7f4565ed66eb22">SomaMaximaAux</a></div><div class="ttdeci">int SomaMaximaAux(Matriz *matriz, int linha, int *colunasUsadas)</div><div class="ttdef"><b>Definição</b> Functions.c:432</div></div>
+<div class="ttc" id="a_header_8h_html_a1ca9b723537474380b06d3b51d2767bb"><div class="ttname"><a href="_header_8h.html#a1ca9b723537474380b06d3b51d2767bb">eliminarLinha</a></div><div class="ttdeci">int eliminarLinha(Matriz *matriz, int pos)</div><div class="ttdef"><b>Definição</b> Functions.c:336</div></div>
+<div class="ttc" id="a_header_8h_html_a23464eb0114f6a40c93ce062fa268e1d"><div class="ttname"><a href="_header_8h.html#a23464eb0114f6a40c93ce062fa268e1d">imprimirLista</a></div><div class="ttdeci">void imprimirLista(Matriz *matriz)</div><div class="ttdef"><b>Definição</b> Functions.c:182</div></div>
+<div class="ttc" id="a_header_8h_html_a401e502fc09ad80bafd4369db3a5a2f6"><div class="ttname"><a href="_header_8h.html#a401e502fc09ad80bafd4369db3a5a2f6">SomaMaxima</a></div><div class="ttdeci">int SomaMaxima(Matriz *matriz)</div><div class="ttdef"><b>Definição</b> Functions.c:455</div></div>
+<div class="ttc" id="a_header_8h_html_a557683bf43cab45c2cb1689e8424dc6f"><div class="ttname"><a href="_header_8h.html#a557683bf43cab45c2cb1689e8424dc6f">CriaLista</a></div><div class="ttdeci">Matriz * CriaLista(int linhas, int colunas)</div><div class="ttdoc">Cria uma nova matriz com o numero especificado de linhas e colunas.</div><div class="ttdef"><b>Definição</b> Functions.c:30</div></div>
+<div class="ttc" id="a_header_8h_html_a6ebfe00bc26cdc193ee5ff4db1f62b37"><div class="ttname"><a href="_header_8h.html#a6ebfe00bc26cdc193ee5ff4db1f62b37">eliminarColuna</a></div><div class="ttdeci">int eliminarColuna(Matriz *matriz, int pos)</div><div class="ttdoc">Remove uma coluna da matriz.</div><div class="ttdef"><b>Definição</b> Functions.c:387</div></div>
+<div class="ttc" id="a_header_8h_html_a8bd23d9230114dcc342d88083bc126bb"><div class="ttname"><a href="_header_8h.html#a8bd23d9230114dcc342d88083bc126bb">ProcurarNumeroMatriz</a></div><div class="ttdeci">No * ProcurarNumeroMatriz(Matriz *matriz, int linha, int coluna)</div><div class="ttdoc">Procura um no especifico em uma matriz dada sua linha e coluna.</div><div class="ttdef"><b>Definição</b> Functions.c:158</div></div>
+<div class="ttc" id="a_header_8h_html_a8fbe3be11775eb8a03a8e224927c9d1b"><div class="ttname"><a href="_header_8h.html#a8fbe3be11775eb8a03a8e224927c9d1b">AdicionarColuna</a></div><div class="ttdeci">int AdicionarColuna(Matriz *matriz, int posicao, int num[])</div><div class="ttdoc">Adiciona uma nova coluna a matriz.</div><div class="ttdef"><b>Definição</b> Functions.c:273</div></div>
+<div class="ttc" id="a_header_8h_html_aaf0b6fef4f6a8fe9a64d33e40309f7d4"><div class="ttname"><a href="_header_8h.html#aaf0b6fef4f6a8fe9a64d33e40309f7d4">AdicionarLinha</a></div><div class="ttdeci">int AdicionarLinha(Matriz *matriz, int posicao, int num[])</div><div class="ttdef"><b>Definição</b> Functions.c:209</div></div>
+<div class="ttc" id="a_header_8h_html_affaa9f23a0d5e8839b001e78e56d673b"><div class="ttname"><a href="_header_8h.html#affaa9f23a0d5e8839b001e78e56d673b">FicheiroParaLista</a></div><div class="ttdeci">int FicheiroParaLista(Matriz *matriz, const char *fileName)</div><div class="ttdoc">Carrega dados de um arquivo para a matriz.</div><div class="ttdef"><b>Definição</b> Functions.c:118</div></div>
+<div class="ttc" id="astruct_matriz_html"><div class="ttname"><a href="struct_matriz.html">Matriz</a></div><div class="ttdoc">Estrutura para representar a matriz.</div><div class="ttdef"><b>Definição</b> Header.h:36</div></div>
+<div class="ttc" id="astruct_matriz_html_a4a2f44649af1dfbf8d13141d5a336455"><div class="ttname"><a href="struct_matriz.html#a4a2f44649af1dfbf8d13141d5a336455">Matriz::coluna</a></div><div class="ttdeci">int coluna</div><div class="ttdef"><b>Definição</b> Header.h:37</div></div>
+<div class="ttc" id="astruct_matriz_html_af20d02e678ba0aeaf8727d747151baf0"><div class="ttname"><a href="struct_matriz.html#af20d02e678ba0aeaf8727d747151baf0">Matriz::linha</a></div><div class="ttdeci">int linha</div><div class="ttdef"><b>Definição</b> Header.h:38</div></div>
+<div class="ttc" id="astruct_matriz_html_aff08063ecf969a4a9168eb29d2a805df"><div class="ttname"><a href="struct_matriz.html#aff08063ecf969a4a9168eb29d2a805df">Matriz::ini</a></div><div class="ttdeci">No * ini</div><div class="ttdef"><b>Definição</b> Header.h:39</div></div>
+<div class="ttc" id="astruct_no_html"><div class="ttname"><a href="struct_no.html">No</a></div><div class="ttdef"><b>Definição</b> Header.h:27</div></div>
+<div class="ttc" id="astruct_no_html_a76f11d9a0a47b94f72c2d0e77fb32240"><div class="ttname"><a href="struct_no.html#a76f11d9a0a47b94f72c2d0e77fb32240">No::n</a></div><div class="ttdeci">int n</div><div class="ttdef"><b>Definição</b> Header.h:28</div></div>
+<div class="ttc" id="astruct_no_html_a8296fb931678979bce9bed213f6b8749"><div class="ttname"><a href="struct_no.html#a8296fb931678979bce9bed213f6b8749">No::pdireita</a></div><div class="ttdeci">No * pdireita</div><div class="ttdef"><b>Definição</b> Header.h:30</div></div>
+<div class="ttc" id="astruct_no_html_ae2403d56aa9e8b9de4c005ab682326e7"><div class="ttname"><a href="struct_no.html#ae2403d56aa9e8b9de4c005ab682326e7">No::pbaixo</a></div><div class="ttdeci">No * pbaixo</div><div class="ttdef"><b>Definição</b> Header.h:29</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Projeto de Manipulacaoo de Matrizes</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Projeto de Manipulacaoo de Matrizes </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
+Introducao</h1>
+<p>Este projeto tem como objetivo fornecer funcoes para manipulacao de matrizes, incluindo carregar dados de um arquivo, adicionar ou remover linhas e colunas, imprimir a matriz e calcular a soma maxima de numeros na matriz onde nem a linha nem a coluna podem ser repetidas.</p>
+<h1><a class="anchor" id="start_sec"></a>
+Como Comecar</h1>
+<p>Para comecar a usar este projeto, você pode incluir o arquivo <a class="el" href="_header_8h.html" title="Declaração de estruturas e funções auxiliares para o arquivo main.c.">Header.h</a> em seu codigo e utilizar as funcoes fornecidas para manipular matrizes. Veja o exemplo abaixo para uma demonstracao simples de como usar algumas dessas funcoes:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="_header_8h.html">Header.h</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line">    <span class="comment">// Exemplo de uso das funcoes</span></div>
+<div class="line">    <a class="code hl_struct" href="struct_matriz.html">Matriz</a>* matriz = <a class="code hl_function" href="_functions_8c.html#a557683bf43cab45c2cb1689e8424dc6f">CriaLista</a>(3, 3); <span class="comment">// Cria uma matriz 3x3</span></div>
+<div class="line">    <a class="code hl_function" href="_functions_8c.html#affaa9f23a0d5e8839b001e78e56d673b">FicheiroParaLista</a>(matriz, <span class="stringliteral">&quot;dados.txt&quot;</span>); <span class="comment">// Carrega dados de um arquivo</span></div>
+<div class="line">    <a class="code hl_function" href="_functions_8c.html#a23464eb0114f6a40c93ce062fa268e1d">imprimirLista</a>(matriz); <span class="comment">// Imprime a matriz</span></div>
+<div class="line">    <span class="comment">// Mais operações de manipulação de matriz...</span></div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="a_functions_8c_html_a23464eb0114f6a40c93ce062fa268e1d"><div class="ttname"><a href="_functions_8c.html#a23464eb0114f6a40c93ce062fa268e1d">imprimirLista</a></div><div class="ttdeci">void imprimirLista(Matriz *matriz)</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> Functions.c:182</div></div>
+<div class="ttc" id="a_functions_8c_html_a557683bf43cab45c2cb1689e8424dc6f"><div class="ttname"><a href="_functions_8c.html#a557683bf43cab45c2cb1689e8424dc6f">CriaLista</a></div><div class="ttdeci">Matriz * CriaLista(int linhas, int colunas)</div><div class="ttdoc">Cria uma nova matriz com o numero especificado de linhas e colunas.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> Functions.c:30</div></div>
+<div class="ttc" id="a_functions_8c_html_affaa9f23a0d5e8839b001e78e56d673b"><div class="ttname"><a href="_functions_8c.html#affaa9f23a0d5e8839b001e78e56d673b">FicheiroParaLista</a></div><div class="ttdeci">int FicheiroParaLista(Matriz *matriz, const char *fileName)</div><div class="ttdoc">Carrega dados de um arquivo para a matriz.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> Functions.c:118</div></div>
+<div class="ttc" id="a_header_8h_html"><div class="ttname"><a href="_header_8h.html">Header.h</a></div><div class="ttdoc">Declaração de estruturas e funções auxiliares para o arquivo main.c.</div></div>
+<div class="ttc" id="amain_8c_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Funcao principal.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> main.c:55</div></div>
+<div class="ttc" id="astruct_matriz_html"><div class="ttname"><a href="struct_matriz.html">Matriz</a></div><div class="ttdoc">Estrutura para representar a matriz.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> Header.h:36</div></div>
+</div><!-- fragment --> </div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"/>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>
